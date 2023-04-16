@@ -36,10 +36,15 @@ function MainHero() {
   })
 
   return (
-    <main className='relative w-screen'>
-      <section>
-        <div className='animate__animated animate__pulse gradient-circle w-screen h-[300px] absolute z-[40] top-0 left-0'></div>
-      </section>
+    <main className='relative w-full h-full pt-[7vh]'>
+      
+      <section className='relative max-w-[1600px] mx-auto h-[93vh]'>
+            <section className='absolute bottom-0 z-[1] p-5'>
+              <section className='overflow-hidden lg:py-3'>
+                <h1 className='text-[3em] md:text-[8em] xl:text-[10em] header font-bold'>pixelwave.</h1>
+              </section>
+            </section>
+        </section>
     </main>
   )
 }

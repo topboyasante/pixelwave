@@ -3,7 +3,7 @@ import { gsap,Power3 } from "gsap";
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 
-function AboutSection() {
+function Projects() {
 
   useEffect(()=>{
     gsap.registerPlugin(ScrollTrigger)
@@ -12,25 +12,26 @@ function AboutSection() {
     const tl = gsap.timeline(
       {
           scrollTrigger:{
-              trigger:".about-container",
+              trigger:".project-container",
               scrub:0.6,
-              start:"top 90%",
+              start:"top 100%",
               end:"bottom 100%",
+              markers:true
           }
       }
   )
   tl.fromTo(".navbar",{
-    color:"black"
+    color:"white"
   },
   {
-    color:"white",
+    color:"black",
     duration:0.5,
   })
   tl.fromTo(".cta",{
-    borderColor:"black"
+    borderColor:"white"
   },
   {
-    borderColor:"white",
+    borderColor:"black",
     duration:0.5,
   })
     tl.fromTo(".about",
@@ -45,17 +46,15 @@ function AboutSection() {
   })
 
   return (
-    <main className='bg-black text-white'>
-        <section className='max-w-[1600px] h-screen mx-auto about-container pt-[7vh]'>
+    <main className='text-black'>
+        <section className='max-w-[1600px] h-screen mx-auto project-container pt-[7vh]'>
           <section className='relative max-w-[1600px] mx-auto h-full'>
               <section className='p-5 '>
 
                 <section className='overflow-hidden lg:py-3'>
-                  <h1 className='text-2xl md:text-4xl xl:text-6xl about'>Pixelwave Studio is a trailblazing web development agency that combines cutting-edge technology with stunning design 
-                  to create custom websites that stand out from the crowd. Our team of talented professionals is dedicated to delivering exceptional results that exceed our clients' expectations 
-                  and leave a lasting impression on their audiences.</h1>
+                  <h1 className='text-2xl md:text-4xl xl:text-6xl about'>Completed Projects:</h1>
                 </section>
-                <hr  className='border-white my-5'/>
+                <hr  className='border-black my-5'/>
                 <section className='flex flex-col lg:flex-row'>
                     
                 </section>
@@ -66,4 +65,4 @@ function AboutSection() {
   )
 }
 
-export default AboutSection
+export default Projects

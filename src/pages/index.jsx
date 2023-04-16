@@ -1,5 +1,6 @@
 import AboutSection from '@/components/page-sections/AboutSection'
 import MainHero from '@/components/page-sections/MainHero'
+import Projects from '@/components/page-sections/Projects'
 import Head from 'next/head'
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <main className='glass-container'>
         <MainHero/>
         <AboutSection/>
+        <Projects/>
       </main>
     </>
   )
