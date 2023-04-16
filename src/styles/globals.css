@@ -40,6 +40,19 @@ body{
 }
 
 .gradient-circle{
-  background: linear-gradient(45deg,#E24C3F, #F3C40F, green);
+  background: linear-gradient(45deg,#E24C3F, #F3C40F,#E24C3F, #F3C40F);
   filter: blur(150px);
+  animation: pulse 5s alternate infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
