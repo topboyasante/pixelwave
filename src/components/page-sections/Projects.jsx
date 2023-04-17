@@ -39,7 +39,7 @@ function Projects() {
 
   return (
     <main className='bg-[#ffffff] text-black'>
-        <section className='max-w-[1600px] h-screen mx-auto projects-container pt-[7vh]'>
+        <section className='max-w-[1600px] h-[100svh] mx-auto projects-container pt-[7vh]'>
           <section className='relative max-w-[1600px] mx-auto h-full'>
               <section className='p-5 '>
 

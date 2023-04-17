@@ -39,7 +39,7 @@ function AboutSection() {
 
   return (
     <main className='bg-[#121212] text-white'>
-        <section className='max-w-[1600px] h-screen mx-auto about-container pt-[7vh]'>
+        <section className='max-w-[1600px] h-[100svh] mx-auto about-container pt-[7vh]'>
           <section className='relative max-w-[1600px] mx-auto h-full'>
               <section className='p-5 '>
 

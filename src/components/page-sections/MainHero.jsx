@@ -34,7 +34,7 @@ function MainHero() {
     )
   })
   return (
-    <main className='w-screen h-screen'>
+    <main className='w-screen h-[100svh]'>
       <section className="max-w-[1600px] h-full mx-auto p-5">
           <section className="relative w-full h-full">
             <section className="absolute bottom-0 overflow-hidden">
